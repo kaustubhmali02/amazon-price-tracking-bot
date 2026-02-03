@@ -25,7 +25,7 @@ product_name = str(soup.find(name="span", id="productTitle").getText().strip())
 target_price = 12000
 
 if target_price >= product_price:
-    print(f"{product_name}\n is now at ${product_price}\n")
+    # print(f"{product_name}\n is now at ${product_price}\n")
     message = f"{product_name}\n is now at ${product_price}\n" \
               f"Link for purchase: {PRODUCT_URL}"
     em = EmailMessage()
